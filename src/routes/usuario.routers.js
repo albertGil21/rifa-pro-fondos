@@ -104,12 +104,6 @@ async function obtenerCompradoresYContador(prisma, email_vendedor) {
   }
 }
 
-
-router.get('/usuarios', async (req, res) => {
-    const respuesta=await prisma.usuarios.findMany();
-    res.json(respuesta)
-});
-
 //enpoin de login
 router.post('/login', async (req, res) => {
   const { email, contrasena } = req.body;

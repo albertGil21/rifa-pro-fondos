@@ -8,6 +8,7 @@
     pkgs.nodejs_20
     pkgs.openssl.dev
     pkgs.sudo
+    pkgs.libuuid
   ];
   # Sets environment variables in the workspace
   env = {};
